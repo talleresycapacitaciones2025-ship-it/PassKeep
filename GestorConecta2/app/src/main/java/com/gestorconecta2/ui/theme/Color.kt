@@ -34,13 +34,3 @@ val StrengthVeryStrong = Color(0xFF059669)
 // Gris carbón para tema oscuro
 val CharcoalGray = Color(0xFF121212)
 val CharcoalGrayLight = Color(0xFF1E1E1E)
-
-/**
- * Enum que representa los niveles de fortaleza de contraseña
- */
-enum class PasswordStrength {
-    WEAK,
-    MEDIUM,
-    STRONG,
-    VERY_STRONG
-}

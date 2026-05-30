@@ -1,12 +1,19 @@
 ```
-# Gradle
-.gradle/
+# Kotlin/Android build artifacts
+*.class
+*.dex
+*.jar
+*.apk
+*.aar
+
+# Android specific
 build/
-target/
+.gradle/
+local.properties
+captures/
 
 # Dependencies
-node_modules/
-vendor/bundle
+.libs/
 
 # Logs
 *.log
@@ -17,45 +24,31 @@ vendor/bundle
 *.env.*
 
 # IDE
-.vscode/
 .idea/
-*.swp
-*.swo
+*.iml
+*.iws
+.vscode/
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Temp files
+*.tmp
+*.swp
+*.swo
 
 # Coverage
 coverage/
 htmlcov/
 .coverage
 
-# Python
+# Python (if any mixed with Android)
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.Python
-*.so
-
-# Compiled
-*.class
-*.o
-*.a
-*.lib
-*.obj
-*.out
-*.exe
-*.dll
-*.so
-
-# Archives
-*.zip
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.gz
-*.rar
-*.7z
+.pytest_cache/
+.mypy_cache/
+dist/
 ```

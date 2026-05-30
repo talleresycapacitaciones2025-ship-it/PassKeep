@@ -4,6 +4,7 @@ import android.app.Activity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
@@ -97,7 +98,7 @@ fun SettingsScreen(
                         },
                         modifier = Modifier.clickable { showChangePasswordDialog = true }
                     )
-                    HorizontalDivider()
+                    Divider()
                     ListItem(
                         headlineContent = { Text("Cerrar sesión") },
                         supportingContent = { Text("Bloquear la bóveda de contraseñas") },
@@ -132,7 +133,7 @@ fun SettingsScreen(
                         },
                         modifier = Modifier.clickable { showExportConfirmDialog = true }
                     )
-                    HorizontalDivider()
+                    Divider()
                     ListItem(
                         headlineContent = { Text("Importar contraseñas") },
                         supportingContent = { Text("Restaurar desde archivo encriptado") },
