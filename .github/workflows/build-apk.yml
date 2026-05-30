@@ -25,10 +25,12 @@ jobs:
           echo "$(pwd)/gradle-8.10.2/bin" >> $GITHUB_PATH
 
       - name: Build APK
-        run: gradle assembleDebug
+        run: |
+          cd GestorConecta2
+          gradle assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: app-debug-apk
-          path: app/build/outputs/apk/debug/*.apk
+          path: GestorConecta2/app/build/outputs/apk/debug/*.apk
