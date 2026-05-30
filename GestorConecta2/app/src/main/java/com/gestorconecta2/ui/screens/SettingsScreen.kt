@@ -165,9 +165,8 @@ fun SettingsScreen(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(horizontal = 16.dp, vertical = 16.dp)
-                ) {
-                    Text("Modo oscuro")
-                }
+                )
+                Text("Modo oscuro")
             }
 
             Spacer(modifier = Modifier.height(16.dp))

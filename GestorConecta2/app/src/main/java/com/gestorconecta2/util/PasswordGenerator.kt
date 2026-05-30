@@ -130,13 +130,3 @@ class PasswordGenerator {
         return List(length) { chars.random() }.joinToString("")
     }
 }
-
-/**
- * Enum que representa los niveles de fortaleza de contraseña
- */
-enum class PasswordStrength {
-    WEAK,
-    MEDIUM,
-    STRONG,
-    VERY_STRONG
-}
