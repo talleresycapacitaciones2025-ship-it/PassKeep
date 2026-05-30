@@ -133,7 +133,7 @@ fun PasswordGeneratorDialog(
         if (isAnimating) {
             repeat(20) { iteration ->
                 generatedPassword = generateRandomTemp(passwordLength)
-                delay(timeMillis = 50 + iteration * 5)
+                delay(timeMillis = (50 + iteration * 5).toLong())
             }
             isAnimating = false
         }
