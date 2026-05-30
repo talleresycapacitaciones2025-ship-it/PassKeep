@@ -18,12 +18,11 @@ __pycache__/
 target/
 .gradle/
 
-# Build directories (Android/Kotlin specific)
+# Build directories (Android/Java specific)
 build/
 app/build/
-.intermediates/
-.externalNativeBuild/
-cxx/
+*.apk
+*.aar
 
 # Logs and temp files
 *.log
