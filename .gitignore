@@ -2,11 +2,11 @@
 *.class
 *.o
 *.obj
-*.exe
+*.out
 *.dll
 *.so
 *.a
-*.out
+*.exe
 
 # Dependencies
 node_modules/
@@ -15,12 +15,24 @@ venv/
 __pycache__/
 .mypy_cache/
 .pytest_cache/
-.gradle/
 target/
+.gradle/
 
-# Build directories
+# Build directories (Android/Java specific)
 build/
-dist/
+app/build/
+*.apk
+*.aar
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Environment
+.env
+.env.local
+*.env.*
 
 # Editors
 .vscode/
@@ -31,15 +43,8 @@ dist/
 # System files
 .DS_Store
 Thumbs.db
-.env
-.env.local
-*.env.*
 
-# Logs and temp files
-*.log
-*.tmp
-
-# Coverage
+# Coverage reports
 coverage/
 htmlcov/
 .coverage

@@ -112,6 +112,7 @@ fun PasswordStrengthIndicator(strength: PasswordStrength) {
 /**
  * Generador de contraseñas con efecto "tragamonedas".
  */
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PasswordGeneratorDialog(
     onDismiss: () -> Unit,

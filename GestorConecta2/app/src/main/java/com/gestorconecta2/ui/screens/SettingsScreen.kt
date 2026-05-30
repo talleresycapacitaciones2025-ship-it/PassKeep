@@ -159,14 +159,19 @@ fun SettingsScreen(
                     .fillMaxWidth()
                     .padding(horizontal = 16.dp, vertical = 4.dp)
             ) {
-                Switch(
-                    checked = darkModeEnabled,
-                    onCheckedChange = onToggleDarkMode,
+                Row(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(horizontal = 16.dp, vertical = 16.dp)
-                )
-                Text("Modo oscuro")
+                        .padding(horizontal = 16.dp, vertical = 16.dp),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text("Modo oscuro")
+                    Switch(
+                        checked = darkModeEnabled,
+                        onCheckedChange = onToggleDarkMode
+                    )
+                }
             }
 
             Spacer(modifier = Modifier.height(16.dp))
