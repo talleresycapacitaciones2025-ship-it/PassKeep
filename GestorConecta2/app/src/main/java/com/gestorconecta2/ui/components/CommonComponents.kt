@@ -3,19 +3,28 @@ package com.gestorconecta2.ui.components
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.ContentCopy
+import androidx.compose.material.icons.filled.Visibility
+import androidx.compose.material.icons.filled.VisibilityOff
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import com.gestorconecta2.ui.theme.MonospaceFontFamily
-import com.gestorconecta2.ui.theme.PasswordStrength
 import com.gestorconecta2.ui.theme.StrengthMedium
 import com.gestorconecta2.ui.theme.StrengthStrong
 import com.gestorconecta2.ui.theme.StrengthVeryStrong
 import com.gestorconecta2.ui.theme.StrengthWeak
+import com.gestorconecta2.util.PasswordStrength
 import kotlinx.coroutines.delay
 
 /**
@@ -35,15 +44,15 @@ fun PasswordField(
         value = value,
         onValueChange = onValueChange,
         label = { Text(label) },
-        visualTransformation = if (passwordVisible) VisualTransformation.None else androidx.compose.ui.text.input.PasswordVisualTransformation(),
-        keyboardOptions = androidx.compose.ui.text.input.KeyboardOptions(keyboardType = androidx.compose.ui.text.input.KeyboardType.Password),
+        visualTransformation = if (passwordVisible) VisualTransformation.None else PasswordVisualTransformation(),
+        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
         singleLine = true,
         readOnly = readOnly,
         modifier = modifier.fillMaxWidth(),
         trailingIcon = {
             IconButton(onClick = { passwordVisible = !passwordVisible }) {
                 Icon(
-                    imageVector = if (passwordVisible) androidx.compose.material.icons.Icons.Default.Visibility else androidx.compose.material.icons.Icons.Default.VisibilityOff,
+                    imageVector = if (passwordVisible) Icons.Default.Visibility else Icons.Default.VisibilityOff,
                     contentDescription = if (passwordVisible) "Ocultar contraseña" else "Mostrar contraseña"
                 )
             }
