@@ -18,6 +18,7 @@ import com.gestorconecta2.ui.components.PasswordGeneratorDialog
 import com.gestorconecta2.ui.components.PasswordStrengthIndicator
 import com.gestorconecta2.ui.theme.MonospaceFontFamily
 import com.gestorconecta2.util.PasswordStrength
+import androidx.compose.foundation.text.KeyboardOptions
 
 /**
  * Pantalla para añadir o editar una contraseña.

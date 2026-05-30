@@ -3,52 +3,45 @@
 *.class
 *.dex
 *.jar
-*.apk
 *.aar
 
-# Android specific
-build/
+# Build directories
+/build/
+/app/build/
+/.gradle/
+/cmake/
 .gradle/
-local.properties
-captures/
 
-# Dependencies
-.libs/
-
-# Logs
-*.log
-
-# Environment
-.env
-.env.local
-*.env.*
-
-# IDE
+# IDE files
 .idea/
 *.iml
+*.ipr
 *.iws
 .vscode/
 
-# OS
-.DS_Store
-Thumbs.db
+# Log files
+*.log
 
-# Temp files
+# Temporary files
 *.tmp
-*.swp
-*.swo
+*.temp
+*~
 
-# Coverage
+# Local configuration
+local.properties
+gradle.properties
+*.properties
+
+# Coverage reports
 coverage/
-htmlcov/
-.coverage
+*.ec
 
-# Python (if any mixed with Android)
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.pytest_cache/
-.mypy_cache/
-dist/
+# Debug files
+*.dSYM/
+*.map
+
+# Android specific
+*.ap_
+*.apk
+*.aab
 ```
