@@ -17,6 +17,8 @@ Puedes descargar la última versión de la aplicación directamente desde nuestr
 ### 🔗 Enlace de Descarga Directa (APK)
 [![Descargar APK](https://img.shields.io/badge/Descargar-PassKeep_v1.0.0-green?style=for-the-badge&logo=android)](https://github.com/talleresycapacitaciones2025-ship-it/PassKeep/releases/download/V1.0.0/app-debug.apk)
 
+// https://github.com/talleresycapacitaciones2025-ship-it/PassKeep/releases/download/V1.0.0/app-debug.apk 
+
 > **Nota:** Este es un archivo `.apk` para dispositivos Android.
 
 ### 📱 Instrucciones de Instalación
